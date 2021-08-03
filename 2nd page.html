@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Is It</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background:url(data:image/jpeg;base64,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);
+            background-color: whitesmoke;
+            text-align: center;
+        }
+        nav{
+            height: 40px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 2px 4px black;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            margin-left: auto;
+        }
+        li{
+            padding-left: 5px;
+            padding-right: 5px;
+            border-left: 2px solid white;
+        }
+        h2{
+            padding-left: 5px;
+            color: black;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        #pra{
+            color: white;
+        }
+        #tintu{
+            text-align: center;
+        }
+        #fib {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        img{
+            height: 30px;
+            width: 125px;
+
+        }
+        #ra{
+            width: 500px;
+            height:65px;
+            margin: auto;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2><marquee>🤙Welcome to How Is It</marquee></h2>
+    </header>
+    <nav>
+        <h1 id="pra">How Is It.com</h1>
+        <ul>
+            <li><a href="3rd page.html">Home</a></li>
+            <li><a href="4nd page.html">About</a></li>
+            <li><a href="5nd page.html">Contact</a></li>
+            <li><a href="TECH THALIVA WEB.html">Tech News</a></li>
+        </ul>
+    </nav><br>
+    <fieldset id="ra">
+    <h2><b>📌If you do not have an account fill the form.</b></h2><br>
+    </fieldset><br>
+    <fieldset id="n">
+   <legend><h1>Your Details</h1></legend><br>
+   <div id="tintu">
+    <label for=""><b>GMAIL</b></label>
+    <input type="">
+    <label for=""><b>PASSWORD</b></label>
+    <input type=""><br><br>
+    <label for=""><b>FIRST NAME</b></label>
+    <input type="">
+    <label for=""><b>LAST NAME</b></label>
+    <input type="">
+    <label for=""><b>NICK NAME</b></label>
+    <input type=""><br><br>
+    <label for=""><b>SAY ABOUT YOUR TALENT</b></label>
+    <input type="">
+    <label for=""><b>YOUR STATUS</b></label>
+    <input type=""><br><br>
+    <label for=""><b>YOUR DATE OF BIRTH</b></label>
+    <input type="date"><br><br>
+    <form action="HII.html">
+    <input type="submit" value="SIGN UP" id="fib"><br><br>
+    </form>
+    </div>
+    </fieldset>
+<hr><hr><br><br>
+    <h5><b>GET THE APP IN</b></h5><br>
+    <h5><b>GET UPDATE ALSO WITH THESE APPS</b></h5><br><br>
+    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png">
+    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"><br><br><br>
+    <hr><hr><br><br>
+    <P>In order of finding any bugs or error in our website please contact us...</P><br><br>
+    
+   
+    
+    
+
+    </div>
+    
+</body>
+</html>
