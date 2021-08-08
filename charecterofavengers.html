@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 15</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        body{
+            background-color: black;
+            text-align: center;
+        }
+     
+        h1 {
+          color: yellow;
+          font-family: 'Lobster', cursive;
+        }
+        .main {
+            width: 100vw;
+            height: 100vh;
+          
+            display: flex;
+            flex-direction: row;
+
+        }
+        .first {
+            flex:1;
+        
+
+        }
+        .second{
+            display: flex;
+            flex: 1;
+            padding: 10px;
+            flex-direction:column;
+        }
+        .third{
+            flex:1;
+           
+        }
+      
+       #hawkeye{
+            text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 50px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+            
+        }
+        #Iron{
+            text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+            
+        }
+      #Captian{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+            
+      }  
+      #Thor{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+      }
+      #Hulk{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+      }
+      #An{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+      }
+      #Ant{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+      }
+      #Black{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+      }
+      #Blackp{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+      }
+      #Winter{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+      }
+      #Nick{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+      }
+      #CaptianM{
+        text-align:center ;
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+            width: 140px;   
+          height: 80px;
+          background-color: black (255,255,255,5);
+          margin: auto;
+          border-radius: 15px;
+          box-shadow: 0px 0px 30px orangered;
+          padding: 15px;
+        
+      }
+      h1{
+          color: yellow;
+          text-align: center;
+          font-size: 30px;
+      }
+      #Hawkeye{
+        width: 200px;
+        height: 200px;
+      }
+      #iron{
+        width: 200px;
+        height: 200px;   
+      }
+      #captian{
+        width: 200px;
+        height: 200px;
+      }
+       #thor{
+        width: 200px;
+        height: 200px;
+       } 
+       #hulk{
+        width: 200px;
+        height: 200px;
+       }
+       #an{
+        width: 200px;
+        height: 200px;
+       }
+        
+#ant{
+    width: 200px;
+        height: 200px;
+}
+#black{
+    width: 200px;
+        height: 200px;
+}
+#blackp{
+    width: 200px;
+        height: 200px;
+}
+#winter{
+    width: 200px;
+        height: 200px;
+}
+#nick{
+    width: 200px;
+        height: 200px;
+}
+#captianM{
+    width: 200px;
+        height: 200px;
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1><u><i>Charecters Of Avengers</i></u></h1>
+    </header>
+    <div class="main">
+        <div class="first">  <img id="Hawkeye" src="https://www.pcclean.io/wp-content/uploads/2019/05/1004427.jpg"><br>
+            <img id="iron" src="https://th.bing.com/th/id/OIP.LVjbBLLixSL8_pTOjXUnZAHaNK?pid=ImgDet&rs=1"><br>
+            <img id="captian" src="https://coed.com/wp-content/uploads/2019/10/shutterstock_1078948385.jpg"><br>
+            <img id="thor" src="https://th.bing.com/th/id/R.ea8e00172856b3ca854ffd00a659fa41?rik=L36T2ipYvxDq7Q&riu=http%3a%2f%2fcdn.collider.com%2fwp-content%2fuploads%2f2017%2f09%2fchris-hemsworth-thor-ragnarok-image.jpg&ehk=%2briwruYtDBZlRFr0mk6EORwSgPYxCet6TOwSjt5GOvk%3d&risl=&pid=ImgRaw&r=0"><br>
+            <img id="hulk" src="https://th.bing.com/th/id/OIP.p5jSs5EQipZ7lF_fKkUxGgHaEK?pid=ImgDet&rs=1"><br>
+            <img id="an" src="https://comiconverse.com/wp-content/uploads/2015/07/Ant-Man-Marvel-Movie-Poster-3-Flying-Ant-Mount-e1436435761489.jpg"><br>
+        </div>
+    <div class="second">
+        <p id="hawkeye">Hawkeye</p>
+        <p id="Iron">Iron Man</p>
+        <p id="Captian">Captian America</p>
+        <p id="Thor">Thor</p>
+        <p id="Hulk">Hulk</p>
+        <p id="An">Ant Man</p>
+        <p id="Ant">Ant Woman</p>
+        <p id="Black">Black Widow </p>
+        <p id="Blackp">Black Panther</p>
+        <p id="Winter">Winter Soldier</p>
+        <p id="Nick">Nick Fury</p>
+        <p id="CaptianM">Captian Marvel</p></div>
+    <div class="third">
+        <img id="ant" src="https://th.bing.com/th/id/OIP.Qc5GtVOmwqOQUgwhA-bN9wHaHa?pid=ImgDet&rs=1"><br>
+        <img id="black" src="https://images.hdqwalls.com/download/black-widow-poster-4k-51-1280x2120.jpg"><br>
+        <img id="blackp" src="https://th.bing.com/th/id/OIP.GjthtoRVgiyROq-9SL5SjwHaE8?pid=ImgDet&rs=1"><br>
+        <img id="winter" src="https://th.bing.com/th/id/OIP.q3ZYD6DGpaNs3yAFPPh70QHaL2?pid=ImgDet&rs=1"><br>
+        <img id="nick" src="https://th.bing.com/th/id/OIP.KhAErf8oA5plMVt6ghd8rwHaHa?pid=ImgDet&rs=1"><br>
+        <img id="captianM" src="https://th.bing.com/th/id/OIP.UCh8q11nEIP5t6Go06XGPwHaNK?pid=ImgDet&rs=1"><br>
+    </div>
+    
+  
+    
+
+    
+    
+</body>
+</html>
