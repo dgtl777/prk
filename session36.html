@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 36</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(palegreen, yellow);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 id="score">Score: 0</h2>
+        <h1>Quiz App</h1>
+    </header>
+    <h3>1. Which is the tallest building in the world?</h3>
+    <label for="">Burj Khalifa</label>
+    <input type="radio" name="building" id="" value="burj">
+    <label for="">Twin Tower</label>
+    <input type="radio" name="building" id="" value="twin"><br><br>
+    <label for="">Shanghai Tower</label>
+    <input type="radio" name="building" id="" value="shanghai">
+    <label for="">The Clock Tower</label>
+    <input type="radio" name="building" id="" value="clock">
+    <h3>2. Which is the highest mountain in the world?</h3>
+    <label for="">Kilimanjaro</label>
+    <input type="radio" name="mountain" id="" value="kilimanjaro">
+    <label for="">Mount Everest</label>
+    <input type="radio" name="mountain" id="" value="everest"><br><br>
+    <label for="">Godwin Austin</label>
+    <input type="radio" name="mountain" id="" value="godwin">
+    <label for="">Himalayas</label>
+    <input type="radio" name="mountain" id="" value="himalayas">
+    <h3>3. Who invented light bulb?</h3>
+    <label for="">Nikola Tesla</label>
+    <input type="radio" name="bulb" id="" value="Nikola">
+    <label for="">Elon Musk</label>
+    <input type="radio" name="bulb" id="" value="Elon"><br><br>
+    <label for="">Steve Jobs</label>
+    <input type="radio" name="bulb" id="" value="Steve">
+    <label for="">Thomas Edison</label>
+    <input type="radio" name="bulb" id="" value="Thomas">
+    <h3>4. Who invented vaccine?</h3>
+    <label for="">Edward Jenner</label>
+    <input type="radio" name="vaccine" id="" value="Edward">
+    <label for="">Louis Pasteur</label>
+    <input type="radio" name="vaccine" id="" value="Louis"><br><br>
+    <label for="">Alexander Fleming</label>
+    <input type="radio" name="vaccine" id="" value="Alexander">
+    <label for="">Jeff Bezos</label>
+    <input type="radio" name="vaccine" id="" value="Jeff">
+    <h3>5. Which 2 companies invented CD? </h3>
+    <label for="">Sony and Philips</label>
+    <input type="radio" name="cd" id="" value="sp">
+    <label for="">Sony and Samsung</label>
+    <input type="radio" name="cd" id="" value="ss"><br><br>
+    <label for="">Google and Yahoo</label>
+    <input type="radio" name="cd" id="" value="gy">
+    <label for="">Amazon and Apple</label>
+    <input type="radio" name="cd" id="" value="aa"><br><br>
+    <button onclick="check()">Submit Answer</button>
+
+</body>
+<script>
+    var score = 0;
+    function check() {
+        var building = document.querySelector('input[name="building"]:checked').value;
+        if (building == "burj") {
+            score = score + 1;
+        }
+        var mountain = document.querySelector('input[name="mountain"]:checked').value;
+        if (mountain == "everest") {
+            score = score + 1;
+        }
+        var bulb = document.querySelector('input[name="bulb"]:checked').value;
+        if (bulb == "Thomas") {
+            score = score + 1;
+        }
+        var vaccine = document.querySelector('input[name="vaccine"]:checked').value;
+        if (vaccine = "Edward") {
+            score = score + 1;
+        }
+        var cd = document.querySelector('input[name="cd"]:checked').value;
+        if (cd == "sp") {
+            score = score + 1;
+        }
+        document.getElementById("score").innerText =
+            "Score: " + score;
+    }
+</script>
+
+</html>

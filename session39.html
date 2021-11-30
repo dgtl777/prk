@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 39</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(purple, yellow);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        img {
+            width: 300px;
+            height: 220px;
+            border: 10px solid white;
+            display: none;
+        }
+
+        #title {
+            animation-name: animText;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes animText {
+            0% {
+                color: red;
+            }
+
+            50% {
+                color: pink;
+            }
+
+            100% {
+                color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="score">Score: 0</h1>
+        <h1 id="title">Riddle App</h1>
+    </header>
+    <h3>1. What has to be broken before you can use it?</h3>
+    <input type="text" name="" id="q1">
+    <button onclick="q1()">Submit Answer</button>
+    <button onclick="h1()">Hint</button>
+    <h3 id="a1"></h3>
+    <img id="i1"
+        src="https://www.eatthis.com/wp-content/uploads/sites/4/2018/10/different-ways-cooking-eggs.jpg?fit=1024%2C750&ssl=1"
+        alt="">
+
+    <h3>2. What has holes but can hold water?</h3>
+    <input type="text" name="" id="q2">
+    <button onclick="q2()">Submit Answer</button>
+    <button onclick="h2()">Hint</button>
+    <h3 id="a2"></h3>
+    <img id="i2" src="https://www.collinsdictionary.com/images/full/sponge_772501450_1000.jpg" alt="">
+
+</body>
+<script>
+    var score = 0
+    var changeScore1 = 0;
+    function h2() {
+        document.getElementById("i2").style.display = "inline-block";
+        score = score - .5;
+        document.getElementById("score").innerText =
+            "Score: " + score;
+    }
+    function q2() {
+        var q2 = document.getElementById("q2").value;
+        if (q2.toUpperCase() == "SPONGE") {
+            document.getElementById("a2").innerText =
+                "correct answer";
+            score = score + 1;
+            document.getElementById("score").innerText =
+                "Score: " + score;
+            changeScore = changeScore + 1;
+        }
+        else {
+            document.getElementById("a2").innerText =
+                "wrong answer";
+        }
+    }
+
+    function h1() {
+        document.getElementById("i1").style.display = "inline-block";
+        score = score - .5;
+        document.getElementById("score").innerText =
+            "Score: " + score;
+    }
+    function q1() {
+        var q1 = document.getElementById("q1").value;
+        if (q1.toUpperCase() == "EGG") {
+            document.getElementById("a1").innerText =
+                "correct answer";
+            score = score + 1;
+            document.getElementById("score").innerText =
+                "Score: " + score;
+            changeScore = changeScore + 1;
+        }
+        else {
+            document.getElementById("a1").innerText =
+                "wrong answer";
+        }
+    }
+
+</script>
+
+</html>
